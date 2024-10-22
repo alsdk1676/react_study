@@ -1,4 +1,6 @@
 import React from 'react';
+import Food from './Food';
+import Foods from './Foods';
 
 const FoodContainer = () => {
 
@@ -15,13 +17,22 @@ const FoodContainer = () => {
   }
 
   return (
+    <Foods foods={foods} style={style} />
+    // <div>
+    //   {foods.map((food) => food.name)}
+    // </div> 
     // <ul>
-    //   {/* {foods.map((food) => food.name)} */}
-    //   {/* {foods.map((food, i) => <li key={i}>{food.name}</li>)}  */}
-    //   {/* {foods.map({name}) => Food name={name}} */}
-    //   {/* 순서없기 떄문에 li태그 사용, 번호(인덱스 i)를 주지않으면 다 찾아야됨 */}
+    //   {/* {foods.map((food) => <li>{food.name}</li>)}  */}
+    //   {/* 순서없기 떄문에 li태그 사용, 번호(인덱스 i)를 주지않으면 처음부터 끝까지 다 찾아야됨 */}
+    // </ul>  
+    // <ul>
+    //   {foods.map((food, i) => <li key={i}>{food.name}</li>)}
     // </ul>
-    <Foods foods={foods} style={style}/>
+    // <ul>
+    //   {foods.map((food, i) => <Food food={food} />)}
+    //   이름만 필요한 경우
+    //   {foods.map((name, i) => <Food key={i} name={name} />)}
+    // </ul>
   );
 };
 

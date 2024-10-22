@@ -1,9 +1,11 @@
 import React from 'react';
+import Food from './Food';
 
 const Foods = ({foods, style}) => {
   return (
     <div>
-      {foods.map((food, i) => <Food key={i} food={food} style={style}/>)}
+      {/* {foods.map((food, i) => <li>{food.name}</li>)} */}
+      {foods.map((food, i) => <Food key={i} food={food} style={style} />)}
     </div>
   );
 };
