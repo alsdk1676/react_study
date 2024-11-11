@@ -7,18 +7,22 @@ import React from 'react';
 
 const Jsx04 = () => {
   
+  // OR 연산자는 앞의 값이 false면 뒤의 값을 return
   const name = undefined || "서민아";
   const login = true;
   const guest = true;
 
   return (
     <div>
-      { login && guest && <div>비회원 로그인입니다!</div>}
+      { login && guest && <div>비회원 로그인입니다!</div> }
+      {/* true + true => "비회원 로그인입니다!" */}
+
       { login ? (
         <div>{name}님 환영합니다.😊</div>
       ) : (
         <div>로그인 실패!!</div>
       )}
+      
     </div>
   );
 };

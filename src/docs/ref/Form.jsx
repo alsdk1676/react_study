@@ -5,12 +5,10 @@ const Form = () => {
   return (
     <form>
       <input type="text" name="email"/>
-      <input type="text" name="password"/>
+      <input type="password" name="password"/>
       <input type="text" name="name"/>
       <input type="text" name="age"/>
-
-
-
+      <button>입력 완료</button>
     </form>
   );
 };

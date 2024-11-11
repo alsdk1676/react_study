@@ -36,10 +36,6 @@ const UserContainer = () => {
 
   return (
       <Users userList={userList} />
-      // <div>
-      //   {userList.map((user, i) => <User user={user} />)}
-      //   {/* {userList.map((userlist, i) => <User key={i} user={user} />)} */}
-      // </div>
   );
 };
 

@@ -5,19 +5,24 @@ const Sound = () => {
   // 버튼을 눌렀을 때 각각 울음 소리가 나오도록 구현하기
   // 강아지는 멍멍, 고양이는 야옹
 
-  const [sound, setSound] = useState(); // ()안에는 초기값
+  // const sound = " 후후"
+  const [sound, setSound] = useState("후후"); // ()안에는 초기값, 상태 1개
   
-  const dogSound = () => {
-    setSound("멍멍")
-  }
-  const catSound = () => {
-    setSound("야옹")
-  }
+  const dogSound = () => { setSound("멍멍") }
+  const catSound = () => { setSound("야옹") }
+
   return (
     <div>
       <p>{sound}</p>
       <button onClick={dogSound}>강아지 버튼</button>
       <button onClick={catSound}>고양이 버튼</button>
+
+      {/* <button onClick={(dogSound) => {
+        setSound("멍멍")
+      }}>강아지 버튼</button>
+      <button onClick={(catSound) => {
+        setSound("야옹")
+      }}>고양이버튼</button>    */}
       
     </div>
   );

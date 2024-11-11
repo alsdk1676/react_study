@@ -5,8 +5,7 @@ const Component2 = (props) => {
   props.printName("서민아");
   return (
     <div>
-      {props.children} {/* 태그를 키값으로 전달 */}
-
+      {props.children} {/* 태그를 키값으로 전달 console창에 children : ~~~ */}
     </div>
   );
 };

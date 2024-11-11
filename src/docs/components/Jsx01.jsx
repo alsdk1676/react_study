@@ -1,8 +1,9 @@
 const Jsx01 = () => {
   return (
-    <React.Fragment>
+    // 빈 태그는 div 태그와 동일 (=React.Fragment)
+    <> 
       <p>나의 첫 컴포넌트! 1번😎</p>
-    </React.Fragment>  
+    </>  
   )
 }
 
